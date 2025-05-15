@@ -3,72 +3,69 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>โปรไฟล์ส่วนตัว</title>
+  <title>สุขสันต์วันเกิดนะที่รัก</title>
   <style>
+    @import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
     body {
-      font-family: 'Sarabun', sans-serif;
-      background-color: #fef6fb;
-      color: #444;
+      font-family: 'Sriracha', cursive;
+      background: linear-gradient(to bottom, #ffeef8, #ffffff);
+      color: #d81b60;
       display: flex;
       justify-content: center;
       align-items: center;
-      height: 100vh;
-      margin: 0;
-    }
-
-    .card {
-      background-color: #ffffff;
-      padding: 2rem;
-      border-radius: 20px;
-      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+      flex-direction: column;
+      min-height: 100vh;
       text-align: center;
-      max-width: 350px;
+      padding: 2rem;
     }
 
-    .profile-pic {
-      width: 120px;
-      height: 120px;
+    .hero-image {
+      width: 200px;
+      height: 200px;
       border-radius: 50%;
       object-fit: cover;
-      border: 5px solid #ffd6e8;
-      margin-bottom: 1rem;
+      border: 6px solid #f8bbd0;
+      margin-bottom: 1.5rem;
     }
 
     h1 {
-      margin: 0.5rem 0;
-      color: #e49ecf;
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
     }
 
     p {
-      margin: 0.2rem 0;
+      font-size: 1.3rem;
+      max-width: 500px;
+      margin-bottom: 1.5rem;
     }
 
-    .contact {
-      margin-top: 1rem;
-      background-color: #ffeef8;
-      padding: 1rem;
-      border-radius: 12px;
+    .hearts {
+      font-size: 1.8rem;
+      animation: float 2s infinite alternate ease-in-out;
     }
 
-    a {
-      color: #c765a0;
-      text-decoration: none;
+    @keyframes float {
+      0% { transform: translateY(0); }
+      100% { transform: translateY(-10px); }
     }
   </style>
 </head>
 <body>
 
-  <div class="card">
-    <img src="your-photo.jpg" alt="รูปโปรไฟล์" class="profile-pic" />
-    <h1>ชื่อของคุณ</h1>
-    <p>นักเรียน | นักพัฒนา | นักออกแบบ</p>
+  <!-- ภาพตัวอย่าง (สามารถเปลี่ยนเป็นรูปจริงได้ในภายหลัง) -->
+  <img src="https://via.placeholder.com/200x200.png?text=Photo" alt="รูปแฟนคุณ" class="hero-image">
 
-    <div class="contact">
-      <p>📧 email@example.com</p>
-      <p>📞 08x-xxx-xxxx</p>
-      <p>🌐 <a href="https://yourwebsite.com" target="_blank">yourwebsite.com</a></p>
-    </div>
-  </div>
+  <h1>สุขสันต์วันเกิดนะที่รัก 💖</h1>
+  <p>ขอให้วันนี้เป็นวันที่อบอวลด้วยความรัก รอยยิ้ม และความทรงจำดี ๆ</p>
+
+  <div class="hearts">❤️ 💕 💖</div>
 
 </body>
 </html>
